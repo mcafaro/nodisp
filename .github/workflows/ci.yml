@@ -14,3 +14,6 @@ jobs:
         uses: matlab-actions/run-command@v2
         with:
           command: myfunc
+          startup-options: -logfile log.txt
+      - name: Display log.txt
+        run: cat log.txt
